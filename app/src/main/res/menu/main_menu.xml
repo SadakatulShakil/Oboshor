@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/language_toggle"
+        android:title="@string/language_toggle"
+        app:actionLayout="@layout/language_toggle"
+        app:showAsAction="ifRoom"
+    />
+
+    <item
+        android:id="@+id/menu_home"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        android:title="@string/menu_home"
+        />
+
+    <item
+        android:id="@+id/menu_notice"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_notice"
+        android:title="@string/menu_notice"
+    />
+
+    <item
+        android:id="@+id/menu_links"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_links"
+        android:title="@string/menu_links"
+    />
+
+    <item
+        android:id="@+id/menu_about"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_about"
+        android:title="@string/menu_about"
+    />
+
+    <item
+        android:id="@+id/menu_contact"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/menu_contact"
+    />
+
+    <item
+        android:id="@+id/menu_faq"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_faq"
+        android:title="@string/menu_faq"
+    />
+
+</menu>

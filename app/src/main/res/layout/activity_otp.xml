@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    tools:context=".UI.OtpActivity">
+
+    <Toolbar
+        android:id="@+id/nav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:elevation="4dp"
+        android:title="@string/app_title_main"
+        android:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_toolbar">
+
+        <TextView
+            android:id="@+id/mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/otp_phone_number"
+            android:textSize="30sp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/otp_subtitle_text"
+            android:textSize="14sp"
+        />
+
+        <EditText
+            android:id="@+id/otp_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="280dp"
+            android:padding="10dp"
+            android:hint="@string/otp_code_hint"
+            android:maxLength="6"
+            android:inputType="numberDecimal"
+            android:textAlignment="textStart"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity=""
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/did_not_get_otp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/countDownText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="05:00"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_time"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otpResendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/resend_otp"
+            android:textSize="14sp"
+        />
+
+        <TextView
+            android:id="@+id/submit_form"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="@string/examine"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+        />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

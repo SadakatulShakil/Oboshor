@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    tools:context=".UI.FaqActivity">
+
+    <Toolbar
+        android:id="@+id/nav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:elevation="4dp"
+        android:title="@string/menu_faq"
+        android:titleTextColor="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/nav_toolbar"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nidUploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_variant">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="অনলাইনে অসম্পূর্ন আবেদনের ডকুমেন্টস কিভাবে পাঠাবো?"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:padding="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_caret"
+                    android:padding="15dp"
+                   />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nidUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_variant"
+            android:padding="10dp"
+            android:text="apps.terbb.gov.bd এই লিংকে প্রবেশ করুন। প্রথমবার রেজিষ্ট্রেশনের সময় আপনার মোবাইলে প্রেরিত পাসয়ার্ড ও ইন্ডেক্স ব্যবহার করে সংশ্লিষ্ট ডকুমেন্টস আপলোড করুন।"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/transactionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_variant">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:text="হারিয়ে যাওয়া বা ভুলে যাওয়া পাসয়ার্ড কিভাবে পাবো?"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:padding="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_caret"
+                    android:layout_gravity="end"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/transactionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_variant"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="পুনরায় ফিরে পেতে; apps.terbb.gov.bd এই লিংকে প্রবেশ করে 'পাসওয়ার্ড ভুলে গেছেন?' অপশনে প্রবেশ করুন।"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/indexBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_variant">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="প্রয়োজনীয় কাগজ ও ব্যংক স্টেটমেন্ট কিভাবে পাঠাবো?"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:padding="10dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_caret"
+                    android:layout_gravity="end"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/indexNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_variant"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="আপনার প্রয়োজনীয় কাগজ ও ব্যংক স্টেটমেন্ট পাঠাতে নিন্মোক্ত ই-মেইল ব্যবহার করুনঃ \n১. school.terbb@gmail.com\n২. college.terbb@gmail.com\n৩. madrasha.terbb@gmail.com"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
